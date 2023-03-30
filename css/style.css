@@ -38,21 +38,23 @@ a{
 .wrap1-header__nav__item{
     margin: 0 15px;
     cursor: pointer;
+    transition: .5s;
 }
 .wrap1-header__nav__item:hover{
     color: var(--color-primary);
     transition: .8 ease;
+    transform: scale(1.1);
 }
 .wrap1-header__btn{
     border-radius: 10px;
     background-color: var(--color-primary);
     padding: 5px 10px;
     cursor: pointer;
-    transition: 0.5 ease;
+    transition: transform .4s;
 }
 .wrap1-header__btn:hover{
     transform: scale(1.2);
-    transition: 0.8 ease;
+    /* transition: 0.8 ease; */
 }
 .wrap1-content{
     margin-top: 100px;
@@ -84,8 +86,87 @@ a{
     right: 3px;
     top: 3px;
     cursor: pointer;
+    transition: .4s;
+
 }
 .wrap1-content__btn:hover{
     transform: scale(1.1);
-    /* tung */
+}
+.wrap2{
+    background-color: #191919;
+    width: 100%;
+    height: 100vh;
+    /* padding: 5% 0; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.wrap2-container{
+    width: 60%;
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.wrap2__img{
+    object-fit: cover;
+    width: 35%;
+    height: 100%;
+    
+    
+}
+.wrap2__content{
+    padding: 15% 0;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.button__item{
+    background-color: var(--color-primary);
+    border-radius: 15px;
+    padding: 5px 10px;
+    display: inline-block;
+    border: solid 1px var(--color-primary);
+    cursor: pointer;
+    transition: .4s;
+    font-size: 12px;
+}
+.button__item:hover{
+    background-color: black;
+}
+.wrap3{
+    width: 100%;
+    height: 80vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 15%;
+}
+.wrap3-list{
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.wrap3-item{
+    background-color: #191919;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    border-radius: 20px;
+    width: 32%;
+    padding: 15px;
+    justify-content: space-evenly;
+}
+.wrap3-item__content{
+    font-size: 12px;
+    line-height: 20px;
+}
+.wrap3-item i{
+    font-size: large;
 }
